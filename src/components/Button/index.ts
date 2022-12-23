@@ -1,3 +1,4 @@
 import Button from "./Button";
+import InnerButton from "./Inner/InnerButton";
 
-export default Button
+export { Button, InnerButton };
