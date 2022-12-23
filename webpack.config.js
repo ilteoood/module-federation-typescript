@@ -49,7 +49,9 @@ module.exports = () => ({
         name: 'moduleFederationTypescript',
         filename: 'remoteEntry.js',
         exposes: {
-          './button': './src/components/Button'
+          './button': './src/components/button',
+          // Warning: if you enable this, the generated types will not be valid anymore
+          // './anotherButton': './src/components/anotherButton'
         },
         shared: {
           ...deps,
