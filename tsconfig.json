@@ -5,7 +5,10 @@
       "strict": true,
       "jsx": "react-jsx",
       "esModuleInterop": true,
-      "resolveJsonModule": true
+      "resolveJsonModule": true,
+      "paths": {
+        "*": ["./@mf-types/*"]
+      }
     },
     "include": ["src/**/*"]
   }
