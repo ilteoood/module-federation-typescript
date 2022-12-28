@@ -1,8 +1,21 @@
 const path = require('path')
 const ModuleFederationPlugin = require('webpack').container.ModuleFederationPlugin
-const {FederatedTypesPlugin} = require('@module-federation/typescript')
+const {NativeFederationTypeScriptHost} = require('native-federation-typescript/webpack')
 
 const deps = require('./package.json').dependencies;
+
+const moduleFederationConfig = {
+  name: 'moduleFederationHost',
+  filename: 'remoteEntry.js',
+  remotes: {
+    'moduleFederationTypescript': 'http://localhost:3000/remoteEntry.js',
+  },
+  shared: {
+    ...deps,
+    react: { singleton: true, eager: true, requiredVersion: deps.react },
+    "react-dom": { singleton: true, eager: true, requiredVersion: deps["react-dom"] }
+  },
+}
 
 module.exports = () => ({
   entry: './src/index',
@@ -10,10 +23,11 @@ module.exports = () => ({
   mode: 'development',
   devtool: 'source-map',
   output: {
-    publicPath: 'auto'
+    publicPath: 'auto',
+    clean: true
   },
   devServer: {
-    port: 3000,
+    port: 3001,
     static: {
       directory: path.join(__dirname, 'dist')
     },
@@ -44,21 +58,7 @@ module.exports = () => ({
     ]
   },
   plugins: [
-    new FederatedTypesPlugin({
-      federationConfig: {
-        name: 'moduleFederationTypescript',
-        filename: 'remoteEntry.js',
-        exposes: {
-          './button': './src/components/button',
-          // Warning: if you enable this, the generated types will not be valid anymore
-          // './anotherButton': './src/components/anotherButton'
-        },
-        shared: {
-          ...deps,
-          react: { singleton: true, eager: true, requiredVersion: deps.react },
-          "react-dom": { singleton: true, eager: true, requiredVersion: deps["react-dom"] }
-        },
-      }
-    })
+    new ModuleFederationPlugin(moduleFederationConfig),
+    NativeFederationTypeScriptHost.webpack({moduleFederationConfig})
   ]
 })
