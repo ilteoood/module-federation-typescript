@@ -19,7 +19,7 @@ const moduleFederationConfig = {
 
 export default defineConfig({
     plugins: [
-        NativeFederationTypeScriptRemote({moduleFederationConfig}),
+        NativeFederationTypeScriptRemote({ moduleFederationConfig }),
         react()
     ],
     build: {
@@ -29,6 +29,16 @@ export default defineConfig({
         }
     },
     server: {
-        port: 3000
+        port: 3000,
+        proxy: {
+            '/@mf-types.zip': {
+                target: 'http://localhost:3000',
+                changeOrigin: true,
+                rewrite: () => `/@fs/${process.cwd()}/dist/@mf-types.zip`
+            }
+        },
+        fs: {
+            allow: ['./dist']
+        }
     }
 })
