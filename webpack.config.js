@@ -59,6 +59,6 @@ module.exports = () => ({
   },
   plugins: [
     new ModuleFederationPlugin(moduleFederationConfig),
-    NativeFederationTypeScriptHost.webpack({moduleFederationConfig})
+    NativeFederationTypeScriptHost({moduleFederationConfig})
   ]
 })
