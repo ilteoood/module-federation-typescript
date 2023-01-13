@@ -1,4 +1,5 @@
 import react from '@vitejs/plugin-react'
+import { NativeFederationTestsRemote } from 'native-federation-tests/vite'
 import { NativeFederationTypeScriptRemote } from 'native-federation-typescript/vite'
 import { defineConfig } from 'vite'
 import packageJson from './package.json'
@@ -19,8 +20,9 @@ const moduleFederationConfig = {
 
 export default defineConfig({
     plugins: [
+        react(),
         NativeFederationTypeScriptRemote({ moduleFederationConfig }),
-        react()
+        NativeFederationTestsRemote({moduleFederationConfig})
     ],
     build: {
         lib: {
