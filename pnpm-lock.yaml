@@ -46,7 +46,7 @@ devDependencies:
   html-webpack-plugin: 5.5.0_webpack@5.75.0
   identity-obj-proxy: 3.0.0
   native-federation-tests: github.com/ilteoood/native-federation-tests/362d37abbb4ea8b77ebf3a3da80178d6cfbe63e1_typescript@4.9.4
-  native-federation-typescript: github.com/ilteoood/native-federation-typescript/9504b05c3b95fc75d79a629bc2577b97a5c5b18e
+  native-federation-typescript: github.com/ilteoood/native-federation-typescript/87853359367c3a5a781a5656e97eda3fbd7ee226
   style-loader: 3.3.1_webpack@5.75.0
   typescript: 4.9.4
   typescript-plugin-css-modules: 4.1.1_typescript@4.9.4
@@ -5878,8 +5878,8 @@ packages:
       - typescript
     dev: true
 
-  github.com/ilteoood/native-federation-typescript/9504b05c3b95fc75d79a629bc2577b97a5c5b18e:
-    resolution: {tarball: https://codeload.github.com/ilteoood/native-federation-typescript/tar.gz/9504b05c3b95fc75d79a629bc2577b97a5c5b18e}
+  github.com/ilteoood/native-federation-typescript/87853359367c3a5a781a5656e97eda3fbd7ee226:
+    resolution: {tarball: https://codeload.github.com/ilteoood/native-federation-typescript/tar.gz/87853359367c3a5a781a5656e97eda3fbd7ee226}
     name: native-federation-typescript
     version: 0.1.0
     prepare: true
