@@ -26,7 +26,7 @@ module.exports = __toCommonJS(anotherButton_exports);
 
 // src/components/anotherButton/AnotherButton.tsx
 var import_jsx_runtime = require("react/jsx-runtime");
-var AnotherButton = ({ onClick }) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { onClick });
+var AnotherButton = ({ onClick }) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { onClick, children: "Another federated button" });
 var AnotherButton_default = AnotherButton;
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {

@@ -27,7 +27,7 @@ module.exports = __toCommonJS(button_exports);
 
 // src/components/button/Button.tsx
 var import_jsx_runtime = require("react/jsx-runtime");
-var Button = ({ onClick }) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { onClick });
+var Button = ({ onClick }) => /* @__PURE__ */ (0, import_jsx_runtime.jsx)("button", { onClick, children: "Federated button" });
 var Button_default = Button;
 
 // src/components/button/Inner/Inner.tsx
