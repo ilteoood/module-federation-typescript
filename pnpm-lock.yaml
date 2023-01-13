@@ -46,7 +46,7 @@ devDependencies:
   html-webpack-plugin: 5.5.0_webpack@5.75.0
   identity-obj-proxy: 3.0.0
   native-federation-tests: github.com/ilteoood/native-federation-tests/362d37abbb4ea8b77ebf3a3da80178d6cfbe63e1_typescript@4.9.4
-  native-federation-typescript: github.com/ilteoood/native-federation-typescript/9504b05c3b95fc75d79a629bc2577b97a5c5b18e
+  native-federation-typescript: github.com/ilteoood/native-federation-typescript/87853359367c3a5a781a5656e97eda3fbd7ee226
   style-loader: 3.3.1_webpack@5.75.0
   typescript: 4.9.4
   typescript-plugin-css-modules: 4.1.1_typescript@4.9.4
@@ -1970,7 +1970,7 @@ packages:
       '@vue/shared': 3.2.45
       estree-walker: 2.0.2
       magic-string: 0.25.9
-      postcss: 8.4.20
+      postcss: 8.4.21
       source-map: 0.6.1
     dev: true
 
@@ -4546,6 +4546,15 @@ packages:
       source-map-js: 1.0.2
     dev: true
 
+  /postcss/8.4.21:
+    resolution: {integrity: sha512-tP7u/Sn/dVxK2NnruI4H9BG+x+Wxz6oeZ1cJ8P6G/PZY0IKk4k/63TDsQf2kQq3+qoJeLm2kIBUNlZe3zgb4Zg==}
+    engines: {node: ^10 || ^12 || >=14}
+    dependencies:
+      nanoid: 3.3.4
+      picocolors: 1.0.0
+      source-map-js: 1.0.2
+    dev: true
+
   /pretty-error/4.0.0:
     resolution: {integrity: sha512-AoJ5YMAcXKYxKhuJGdcvse+Voc6v1RgnsR3nWcYU7q4t6z0Q6T86sv5Zq8VIRbOWWFpvdGE83LtdSMNd+6Y0xw==}
     dependencies:
@@ -4574,8 +4583,8 @@ packages:
     dev: true
     optional: true
 
-  /punycode/2.1.1:
-    resolution: {integrity: sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==}
+  /punycode/2.2.0:
+    resolution: {integrity: sha512-LN6QV1IJ9ZhxWTNdktaPClrNfp8xdSAYS0Zk2ddX7XsXZAxckMHPCBcHRo0cTcEIgYPRiGEkmji3Idkh2yFtYw==}
     engines: {node: '>=6'}
     dev: true
 
@@ -4788,6 +4797,14 @@ packages:
     hasBin: true
     dependencies:
       glob: 7.2.3
+    dev: true
+
+  /rollup/3.10.0:
+    resolution: {integrity: sha512-JmRYz44NjC1MjVF2VKxc0M1a97vn+cDxeqWmnwyAF4FvpjK8YFdHpaqvQB+3IxCvX05vJxKZkoMDU8TShhmJVA==}
+    engines: {node: '>=14.18.0', npm: '>=8.0.0'}
+    hasBin: true
+    optionalDependencies:
+      fsevents: 2.3.2
     dev: true
 
   /rollup/3.9.0:
@@ -5258,7 +5275,7 @@ packages:
   /tr46/1.0.1:
     resolution: {integrity: sha512-dTpowEjclQ7Kgx5SdBkqRzVhERQXov8/l9Ft9dVM9fmg0W0KQSVaXX9T4i6twCPNtYiZM53lpSSUAwJbFPOHxA==}
     dependencies:
-      punycode: 2.1.1
+      punycode: 2.2.0
     dev: true
 
   /tree-kill/1.2.2:
@@ -5309,7 +5326,7 @@ packages:
       joycon: 3.1.1
       postcss-load-config: 3.1.4
       resolve-from: 5.0.0
-      rollup: 3.9.0
+      rollup: 3.10.0
       source-map: 0.8.0-beta.0
       sucrase: 3.29.0
       tree-kill: 1.2.2
@@ -5418,7 +5435,7 @@ packages:
   /uri-js/4.4.1:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
     dependencies:
-      punycode: 2.1.1
+      punycode: 2.2.0
     dev: true
 
   /util-deprecate/1.0.2:
@@ -5869,8 +5886,8 @@ packages:
       - typescript
     dev: true
 
-  github.com/ilteoood/native-federation-typescript/9504b05c3b95fc75d79a629bc2577b97a5c5b18e:
-    resolution: {tarball: https://codeload.github.com/ilteoood/native-federation-typescript/tar.gz/9504b05c3b95fc75d79a629bc2577b97a5c5b18e}
+  github.com/ilteoood/native-federation-typescript/87853359367c3a5a781a5656e97eda3fbd7ee226:
+    resolution: {tarball: https://codeload.github.com/ilteoood/native-federation-typescript/tar.gz/87853359367c3a5a781a5656e97eda3fbd7ee226}
     name: native-federation-typescript
     version: 0.1.0
     prepare: true
