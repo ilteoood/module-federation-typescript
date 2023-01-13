@@ -40,7 +40,7 @@ module.exports = () => ({
     liveReload: true
   },
   resolve: {
-    extensions: ['.ts', '.tsx', '.js']
+    extensions: ['.ts', '.tsx', '.js', '.d.ts']
   },
   module: {
     rules: [
