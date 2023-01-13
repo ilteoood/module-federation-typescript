@@ -14,7 +14,7 @@ specifiers:
   css-loader: ^6.7.3
   html-webpack-plugin: 5.5.0
   identity-obj-proxy: ^3.0.0
-  native-federation-tests: link:github.com/ilteoood/native-federation-tests
+  native-federation-tests: github:ilteoood/native-federation-tests
   native-federation-typescript: github:ilteoood/native-federation-typescript
   react: ^18.2.0
   react-dom: ^18.2.0
@@ -45,7 +45,7 @@ devDependencies:
   css-loader: 6.7.3_webpack@5.75.0
   html-webpack-plugin: 5.5.0_webpack@5.75.0
   identity-obj-proxy: 3.0.0
-  native-federation-tests: link:github.com/ilteoood/native-federation-tests
+  native-federation-tests: github.com/ilteoood/native-federation-tests/362d37abbb4ea8b77ebf3a3da80178d6cfbe63e1_typescript@4.9.4
   native-federation-typescript: github.com/ilteoood/native-federation-typescript/9504b05c3b95fc75d79a629bc2577b97a5c5b18e
   style-loader: 3.3.1_webpack@5.75.0
   typescript: 4.9.4
@@ -5845,6 +5845,28 @@ packages:
   /yaml/1.10.2:
     resolution: {integrity: sha512-r3vXyErRCYJ7wg28yvBY5VSoAF8ZvlcW9/BwUzEtUsjvX/DKs24dIkuwjtuprwJJHsbyUbLApepYTR1BN4uHrg==}
     engines: {node: '>= 6'}
+    dev: true
+
+  github.com/ilteoood/native-federation-tests/362d37abbb4ea8b77ebf3a3da80178d6cfbe63e1_typescript@4.9.4:
+    resolution: {tarball: https://codeload.github.com/ilteoood/native-federation-tests/tar.gz/362d37abbb4ea8b77ebf3a3da80178d6cfbe63e1}
+    id: github.com/ilteoood/native-federation-tests/362d37abbb4ea8b77ebf3a3da80178d6cfbe63e1
+    name: native-federation-tests
+    version: 0.1.0
+    prepare: true
+    requiresBuild: true
+    dependencies:
+      adm-zip: 0.5.10
+      axios: 1.2.2
+      rambda: 7.4.0
+      tsup: 6.5.0_typescript@4.9.4
+      unplugin: 1.0.1
+    transitivePeerDependencies:
+      - '@swc/core'
+      - debug
+      - postcss
+      - supports-color
+      - ts-node
+      - typescript
     dev: true
 
   github.com/ilteoood/native-federation-typescript/9504b05c3b95fc75d79a629bc2577b97a5c5b18e:
