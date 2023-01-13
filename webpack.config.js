@@ -1,6 +1,7 @@
 const path = require('path')
 const ModuleFederationPlugin = require('webpack').container.ModuleFederationPlugin
 const {NativeFederationTypeScriptHost} = require('native-federation-typescript/webpack')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 const deps = require('./package.json').dependencies;
 
@@ -59,6 +60,7 @@ module.exports = () => ({
   },
   plugins: [
     new ModuleFederationPlugin(moduleFederationConfig),
-    NativeFederationTypeScriptHost({moduleFederationConfig})
+    NativeFederationTypeScriptHost({moduleFederationConfig}),
+    new HtmlWebpackPlugin({template: './public/index.html'})
   ]
 })
