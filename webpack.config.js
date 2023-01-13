@@ -62,6 +62,6 @@ module.exports = () => ({
   plugins: [
     new ModuleFederationPlugin(moduleFederationConfig),
     NativeFederationTypeScriptRemote({moduleFederationConfig}),
-    NativeFederationTestsRemote({moduleFederationConfig})
+    NativeFederationTestsRemote({ moduleFederationConfig, additionalBundlerConfig: {format: 'esm'}})
   ]
 })
