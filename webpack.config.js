@@ -10,7 +10,7 @@ const moduleFederationConfig = {
   name: 'moduleFederationHost',
   filename: 'remoteEntry.js',
   remotes: {
-    'moduleFederationTypescript': 'http://localhost:3000/remoteEntry.js',
+    'moduleFederationTypescript': 'moduleFederationTypescript@http://localhost:3000/remoteEntry.js',
   },
   shared: {
     ...deps,

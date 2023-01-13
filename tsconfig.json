@@ -6,6 +6,9 @@
       "jsx": "react-jsx",
       "esModuleInterop": true,
       "resolveJsonModule": true,
+      "moduleResolution": "node",
+      "target": "ESNext",
+      "module": "ES2022",
       "paths": {
         "*": ["./@mf-types/*"]
       }
